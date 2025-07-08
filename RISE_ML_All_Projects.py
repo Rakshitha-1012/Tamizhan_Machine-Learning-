@@ -156,13 +156,3 @@ y7 = emotion_data['emotion']
 model7 = LogisticRegression()
 model7.fit(X7, y7)
 print("Emotion Prediction:", model7.predict(tfidf.transform(["I am thrilled"])))
-
-
-# ----------------------------------------
-# Project 8: Plant Disease Detection Using CNN
-# ----------------------------------------
-
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-
-# Note: In real scenarios, use image folders with structure: data/train/Healthy, data/train/Diseased
-print("To run this project, use a dataset of plant images with labeled folders")
